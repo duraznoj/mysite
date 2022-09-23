@@ -42,7 +42,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "polls.apps.PollsConfig",
+    #"polls.apps.PollsConfig", # when polls was nested inside 'mysite' directory
+    "polls", #import polls as a package
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
