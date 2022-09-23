@@ -5,6 +5,9 @@
   {% endfor %}
 </ul-->
 
+{% load static %}
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+
 <form action="{% url 'polls:vote' question.id %}" method="post">
   <!--Note: action defines where the form data will be sent (ie what URL to send the data to),
     The url gets set as whatever we put in the "polls:urls.py file with the path(name = "vote")"
